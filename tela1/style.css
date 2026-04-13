@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #2c2c2c;
+  font-family: "Poppins", sans-serif;
+}
+
+.android-screen {
+  width: 360px;
+  height: 640px;
+  background-image: url("imagem/principal.png");
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-text-btn {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  gap: 6px;
+}
+
+.profile-avatar {
+  width: 26px;
+  height: 26px;
+  background-color: #87ceeb;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.scroll-area {
+  flex: 1;
+  overflow-y: auto;
+  padding-top: 95px;
+  padding-bottom: 20px;
+}
+
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+
+.post-card {
+  background-color: #f0f8ff;
+  border-radius: 16px;
+  margin: 0px 28px 20px 28px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 10px;
+}
+
+.profile-avatar {
+  position: absolute;
+  top: 43px;
+  left: 332px;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background-color: #87ceeb;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.post-header .username {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.post-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.post-actions {
+  display: flex;
+  padding: 10px 14px 4px 14px;
+  gap: 16px;
+}
+
+.action-icon {
+  cursor: pointer;
+  color: #333;
+}
+
+.action-icon:hover {
+  opacity: 0.7;
+}
+
+.post-content {
+  padding: 0 14px 14px 14px;
+  font-size: 12px;
+  color: #333;
+}
+
+.post-content .likes {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.post-content .caption strong {
+  font-weight: 600;
+  margin-right: 4px;
+}
+
+.post-content .view-comments {
+  color: #888;
+  margin-top: 6px;
+  display: block;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.top-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 115px;
+  z-index: 20;
+}
+
+.icon {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  transform: translate(-50%, -50%);
+}
+
+.icon-1 {
+  top: 43px;
+  left: 42px;
+}
+
+.icon-2 {
+  top: 43px;
+  left: 122px;
+}
+
+.icon-3 {
+  top: 43px;
+  left: 202px;
+}
