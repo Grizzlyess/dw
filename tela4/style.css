@@ -164,20 +164,15 @@ html {
   outline: none;
   font-family: "Poppins", sans-serif;
 }
-.btn-novo { 
-    background-color: #4b0082; /* Roxo principal */
-    color: white; 
-    border: none; 
-    padding: 12px 20px; 
-    border-radius: 8px; 
-    cursor: pointer; 
-    font-weight: 600; 
-    font-family: 'Poppins', sans-serif;
-    transition: background 0.2s;
-}
-
-.btn-novo:hover {
-    background-color: #3c006d; /* Roxo mais escuro ao passar o mouse */
+.btn-novo {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
 }
 .grade-arquivos {
   display: grid;

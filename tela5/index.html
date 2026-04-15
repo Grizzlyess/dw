@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de Documentos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <div class="principal">
+    <div class="janela-gerenciador">
+      <div class="barra-superior">
+        <div class="titulo-janela">Gerenciador de Arquivos</div>
+
+        <div class="controles-janela">
+          <span class="ponto minimizar">−</span>
+          <span class="ponto fechar">×</span>
+        </div>
+      </div>
+
+      <div class="corpo-da-janela">
+        <aside class="sidebar">
+          <h2 class="titulo-sessao">Arquivos</h2>
+          <nav class="menu-opcoes">
+            <div class="item-menu ativo">
+              <img src="imagem/perfil.png" alt="" /> Início
+            </div>
+            <div class="item-menu">
+              <img src="imagem/documento.png" alt="" /> Documentos
+            </div>
+            <div class="item-menu">
+              <img src="imagem/imagem.png" alt="" /> Imagens
+            </div>
+            <div class="item-menu">
+              <img src="imagem/videos.png" alt="" /> Vídeos
+            </div>
+            <div class="item-menu configuracao">
+              <img src="imagem/config.png" alt="" /> Configurações
+            </div>
+          </nav>
+        </aside>
+
+        <main class="conteudo-arquivos">
+          <header class="barra-topo">
+            <input
+              type="text"
+              placeholder="Buscar arquivos..."
+              class="input-busca"
+            />
+            <button class="btn-nova-pasta">+ Nova Pasta</button>
+          </header>
+
+          <section class="grade-arquivos">
+            <div class="arquivo">
+              <div class="pasta-cor amarela"></div>
+              <span>Fotos</span>
+            </div>
+            <div class="arquivo">
+              <div class="pasta-cor azul"></div>
+              <span>Currículo.pdf</span>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+  </div>
+</html>
