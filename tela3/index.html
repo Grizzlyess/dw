@@ -1,12 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <button onclick="abrirAlerta()">Clique aqui!!!</button>
+  </body>
+  <script>
+    function abrirAlerta() {
+      swal({
+        title: "Good job!",
+        text: "You clicked the button!",
+        icon: "success",
+      });
+    }
+  </script>
 </html>
