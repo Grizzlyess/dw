@@ -2,7 +2,7 @@
 
 body {
     background-color: #000;
-    background-image: url('imagem/principal.png'); /* Se tiver a imagem */
+    background-image: url('imagem/principal.png'); 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,18 +16,17 @@ body {
     background-color: #fff;
     border-radius: 12px;
     display: flex;
-    flex-direction: column; /* MUITO IMPORTANTE: Empilha a barra no topo e o corpo embaixo */
+    flex-direction: column;
     overflow: hidden;
     box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
-/* A Barra Superior Simplificada */
 .barra-superior {
     height: 40px;
-    background-color: #f8f8f8; /* Um cinza bem clarinho */
-    border-bottom: 1px solid #d1d1d1; /* A linha que você pediu */
+    background-color: #341539;
+    border-bottom: 1px solid #CE53E0;
     display: flex;
-    justify-content: space-between; /* Título de um lado, botões do outro */
+    justify-content: space-between;
     align-items: center;
     padding: 0 15px;
 }
