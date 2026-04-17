@@ -23,8 +23,8 @@ body {
 
 .barra-superior {
     height: 40px;
-    background-color: #341539;
-    border-bottom: 1px solid #CE53E0;
+    background-color: #c9a0dc;
+    border-bottom: 1px solid #341539;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,7 +35,7 @@ body {
 .titulo-janela {
     font-size: 13px;
     font-weight: 500;
-    color: #555;
+    color: #341539;
 }
 
 /* Botões de Controle */
@@ -48,7 +48,7 @@ body {
 .ponto {
     cursor: pointer;
     font-size: 18px;
-    color: #888;
+    color: #341539;
     transition: color 0.2s;
     user-select: none; /* Evita selecionar o texto do ícone ao clicar */
 }
@@ -78,7 +78,7 @@ body {
 .titulo-sessao {
     padding: 0 20px 15px;
     font-size: 18px;
-    color: #333;
+    color: #341539;
 }
 
 .item-menu {
@@ -98,14 +98,17 @@ body {
 .item-menu.ativo {
     background-color: #f0f4ff;
     color: #4a148c;
-    border-left: 4px solid #4a148c;
+    border-left: 4px solid #c9a0dc;
 }
 
 /* Área de Conteúdo */
 .conteudo-arquivos {
     flex: 1;
     padding: 20px;
-    background-color: #fcfcfc;
+    background-image: url('imagem/fundo.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-image: linear-gradient(rgba(252, 252, 252, 0.8), rgba(252, 252, 252, 0.8)), url('imagem/fundo.jpg');
 }
 
 .barra-topo {
