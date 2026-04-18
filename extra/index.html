@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de Documentos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <body>
+    <div class="principal">
+        <a href="#modalGerenciador" class="botao-arquivo">
+            <img src="imagem/arquivo.png" alt="Ícone de Arquivo" class="icon" />
+        </a>
+    </div>
+
+    <div id="modalGerenciador" class="modal">
+        
+        <div class="modal-conteudo">
+            
+            <a href="#" class="fechar-modal">&times;</a>
+
+            <aside class="barra-lateral">
+                <h3>Arquivos</h3>
+                
+                <div class="menu-item ativo">
+                    <img src="imagem/perfil.png" alt="Início" class="icone-menu">
+                    <span>Início</span>
+                </div>
+                <div class="menu-item">
+                    <img src="imagem/documento.png" alt="Documentos" class="icone-menu">
+                    <span>Documentos</span>
+                </div>
+                <div class="menu-item">
+                    <img src="imagem/imagem.png" alt="Imagens" class="icone-menu">
+                    <span>Imagens</span>
+                </div>
+                <div class="menu-item">
+                    <img src="imagem/videos.png" alt="Vídeos" class="icone-menu">
+                    <span>Vídeos</span>
+                </div>
+                <div class="menu-item">
+                    <img src="imagem/config.png" alt="Configurações" class="icone-menu">
+                    <span>Configurações</span>
+                </div>
+            </aside>
+
+            <main class="area-conteudo">
+                
+                <div class="barra-ferramentas">
+                    <input type="text" placeholder="Buscar arquivos..." class="campo-busca">
+                    <button class="btn-novo">+ Nova Pasta</button>
+                </div>
+
+                <div class="grade-arquivos">
+                    <div class="item-arquivo">
+                        <div class="icone">📁</div>
+                        <span>Fotos</span>
+                    </div>
+                    <div class="item-arquivo">
+                        <div class="icone">📄</div>
+                        <span>Curriculo.pdf</span>
+                    </div>
+                    <div class="item-arquivo">
+                        <div class="icone">🖼️</div>
+                        <span>Viagem_2025.jpg</span>
+                    </div>
+                    <div class="item-arquivo">
+                        <div class="icone">🎵</div>
+                        <span>Audio.mp3</span>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+    </div>
+</body>
+
+    
+  </body>
+</html>
