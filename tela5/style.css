@@ -1,13 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap");
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Poppins', sans-serif;  
+    background: linear-gradient(to bottom, #ffffff 60%, #c67085);
+    background-attachment: fixed; 
+    
 }
 
-/* Header */
 .header {
     height: 56px;
-    background-color: white;
+    background-color: #FFC5D3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +27,7 @@ body {
     margin-top: 56px;
 }
 
-/* Sidebar */
+
 .barra-lateral {
     width: 240px;
     height: calc(100vh - 56px);
@@ -40,9 +43,8 @@ body {
     color: black;
 }
 
-/* Área de Vídeos (Grid) */
 .video-grid {
-    margin-left: 260px; /* Largura da sidebar + espaço */
+    margin-left: 260px; 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -50,19 +52,18 @@ body {
     width: 100%;
 }
 
-/* Card de Vídeo */
 .video-card {
-    background-color: white;
+    background-color: transparent;
 }
 
 .thumbnail {
     width: 100%;
     height: 150px;
-    background-color: #ccc; /* Cor de fundo provisória */
+    background-color: #ccc; 
     border-radius: 10px;
 }
 
-.video-nome {
+.video-no {
     font-weight: bold;
     margin: 10px 0 5px 0;
 }
