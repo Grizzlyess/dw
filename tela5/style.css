@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    height: 56px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Container para Sidebar e Vídeos */
+.container {
+    display: flex;
+    margin-top: 56px;
+}
+
+/* Sidebar */
+.barra-lateral {
+    width: 240px;
+    height: calc(100vh - 56px);
+    background-color: white;
+    padding: 10px;
+    position: fixed;
+}
+
+.barra-lateral a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Área de Vídeos (Grid) */
+.video-grid {
+    margin-left: 260px; /* Largura da sidebar + espaço */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Card de Vídeo */
+.video-card {
+    background-color: white;
+}
+
+.thumbnail {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc; /* Cor de fundo provisória */
+    border-radius: 10px;
+}
+
+.video-nome {
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+}
+
+.canal-name {
+    color: #606060;
+    font-size: 14px;
+}
