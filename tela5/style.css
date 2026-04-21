@@ -1,74 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600&display=swap");
 
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;  
-    background: linear-gradient(to bottom, #ffffff 60%, #c67085);
-    background-attachment: fixed; 
-    
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #ffffff 60%, #c67085);
+  background-attachment: fixed;
 }
 
 .header {
-    height: 56px;
-    background-color: #FFC5D3;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  height: 56px;
+  background-color: #ffc5d3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  font-family: "Pacifico", cursive;
+  font-size: 24px; 
+  color: #333;
 }
 
 /* Container para Sidebar e Vídeos */
 .container {
-    display: flex;
-    margin-top: 56px;
+  display: flex;
+  margin-top: 56px;
 }
 
-
 .barra-lateral {
-    width: 240px;
-    height: calc(100vh - 56px);
-    background-color: white;
-    padding: 10px;
-    position: fixed;
+  width: 240px;
+  height: calc(100vh - 56px);
+  background-color: white;
+  padding: 10px;
+  position: fixed;
 }
 
 .barra-lateral a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
+  display: flex; /* Transforma o link numa linha flexível */
+  align-items: center; /* Centraliza o ícone e o texto verticalmente */
+  gap: 15px; /* Cria um espaço perfeito de 15px entre o ícone e o texto */
+  padding: 12px 15px; /* Espaçamento interno para ficar confortável de clicar */
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+}
+
+.icone-sidebar {
+  width: 24px; /* Tamanho padrão do YouTube para ícones */
+  height: 24px;
+  object-fit: contain; /* Evita que o ícone fique esticado ou achatado */
 }
 
 .video-grid {
-    margin-left: 260px; 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 20px;
-    width: 100%;
+  margin-left: 260px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
 }
 
 .video-card {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .thumbnail {
-    width: 100%;
-    height: 150px;
-    background-color: #ccc; 
-    border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #ccc;
+  border-radius: 10px;
 }
 
 .video-no {
-    font-weight: bold;
-    margin: 10px 0 5px 0;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
 }
 
 .canal-name {
-    color: #606060;
-    font-size: 14px;
+  color: #606060;
+  font-size: 14px;
 }
