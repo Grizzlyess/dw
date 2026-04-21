@@ -3,23 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tela de Login</title>
+    <title>⚠️ Aviso</title>
     <link rel="stylesheet" href="style.css" />
 
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
   <body>
-    <button onclick="abrirAlerta()">Clique aqui!!!</button>
-
+    <div class="botoes-container">
+      <button onclick="abrirAlerta()">Clique aqui !!!</button>
+      <button onclick="abrirAlerta2()">Clique aqui também!!!</button>
+    </div>
     <script>
       function abrirAlerta() {
-        swal({
+        Swal.fire({
           title: "Você acordou o gatinho...",
           text: "Ele tá chateado, faça um pix para deixar ele feliz!!!",
-          icon: "imagem/cat.png",
-          buttons: {
-            cancel: "Não",
-            confirm: "Sim!",
+          imageUrl: "imagem/cat.png",
+          showCancelButton: true,
+          confirmButtonText: "Sim",
+          cancelButtonText: "Não",
+          heightAuto: false,
+        });
+      }
+
+      function abrirAlerta2() {
+        Swal.fire({
+          title: "Você caiu num phishing!!!",
+          text: "Quem mandou apertar botão estranho? Faça um pix para recuperar seus dados!!!",
+          imageUrl: "imagem/cat2.png",
+          showCancelButton: true,
+          confirmButtonText: "Sim",
+          cancelButtonText: "Não",
+          heightAuto: false,
+
+          customClass: {
+            image: "gatinho-phishing",
+            title: 'titulo-phishing'
           },
         });
       }
