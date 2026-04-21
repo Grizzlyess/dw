@@ -13,7 +13,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  box-sizing: border-box;
+  padding: 0 40px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -21,9 +22,61 @@ body {
   font-family: "Pacifico", cursive;
   font-size: 24px; 
   color: #333;
+  
 }
 
-/* Container para Sidebar e Vídeos */
+.busca-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #c67085; 
+    border-radius: 40px;
+    background-color: #f1f1f1; 
+    overflow: hidden;
+    width: 500px;
+}
+
+.busca-input {
+    background-color: transparent; 
+    border: none;
+    padding: 10px 20px;
+    flex: 1;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+.busca-button {
+    background-color: #f8f8f8; 
+    border: none;
+    border-left: 1px solid #c67085; 
+    padding: 0 20px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.busca-icon {
+    width: 18px;
+    height: 18px;
+    opacity: 0.6; 
+}
+
+.user-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil-icon {
+    width: 35px; 
+    height: 35px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    cursor: pointer;
+}
+
 .container {
   display: flex;
   margin-top: 56px;
@@ -35,22 +88,23 @@ body {
   background-color: white;
   padding: 10px;
   position: fixed;
+  border-right: 1px solid #e0e0e0;
 }
 
 .barra-lateral a {
-  display: flex; /* Transforma o link numa linha flexível */
-  align-items: center; /* Centraliza o ícone e o texto verticalmente */
-  gap: 15px; /* Cria um espaço perfeito de 15px entre o ícone e o texto */
-  padding: 12px 15px; /* Espaçamento interno para ficar confortável de clicar */
+  display: flex;
+  align-items: center; 
+  gap: 15px; 
+  padding: 12px 15px;
   text-decoration: none;
   color: black;
   border-radius: 10px;
 }
 
 .icone-sidebar {
-  width: 24px; /* Tamanho padrão do YouTube para ícones */
+  width: 24px; 
   height: 24px;
-  object-fit: contain; /* Evita que o ícone fique esticado ou achatado */
+  object-fit: contain; 
 }
 
 .video-grid {
@@ -67,10 +121,11 @@ body {
 }
 
 .thumbnail {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  background-color: #ccc;
-  border-radius: 10px;
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    border-radius: 10px;
+    object-fit: cover; 
+    background-color: #ccc; 
 }
 
 .video-no {
