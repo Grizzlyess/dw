@@ -31,7 +31,8 @@ body {
 }
 
 .titulo-janela {
-    font-size: 13px;
+    font-family: "Pacifico", cursive;
+    font-size: 18px;
     font-weight: 500;
     color: #341539;
 }
