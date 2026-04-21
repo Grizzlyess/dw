@@ -9,7 +9,6 @@ body {
     align-items: center;
 }
 
-/* A Janela Branca */
 .janela-gerenciador {
     width: 1000px;
     height: 700px;
@@ -31,14 +30,12 @@ body {
     padding: 0 15px;
 }
 
-/* Estilo do Texto/Título */
 .titulo-janela {
     font-size: 13px;
     font-weight: 500;
     color: #341539;
 }
 
-/* Botões de Controle */
 .controles-janela {
     display: flex;
     gap: 15px;
@@ -50,25 +47,20 @@ body {
     font-size: 18px;
     color: #341539;
     transition: color 0.2s;
-    user-select: none; /* Evita selecionar o texto do ícone ao clicar */
+    user-select: none; 
 }
 
-/* Efeito ao passar o mouse */
-.minimizar:hover {
-    color: #666;
-}
 
 .fechar:hover {
-    color: #ff5f56; /* Fica vermelho ao passar o mouse no X */
+    color: #ff5f56;
 }
 
-/* Garante que o corpo-da-janela continue funcionando */
 .corpo-da-janela {
     display: flex;
     flex: 1;
 }
 
-/* Menu Lateral */
+
 .sidebar {
     width: 220px;
     border-right: 1px solid #eee;
@@ -101,7 +93,7 @@ body {
     border-left: 4px solid #c9a0dc;
 }
 
-/* Área de Conteúdo */
+
 .conteudo-arquivos {
     flex: 1;
     padding: 20px;
@@ -133,7 +125,6 @@ body {
     cursor: pointer;
 }
 
-/* Grade de Arquivos */
 .grade-arquivos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -149,11 +140,11 @@ body {
     color: #444;
 }
 
-/* Apenas para simular as pastas da sua imagem enquanto não põe ícones */
+
 .pasta-cor {
     width: 50px;
     height: 50px;
     border-radius: 8px;
-    background-color: #ffd54f; /* Amarelo pasta */
+    background-color: #ffd54f; 
 }
 
